@@ -12,6 +12,8 @@
 #import <MediaPlayer/MediaPlayer.h>
 #import <AVKit/AVKit.h>
 #import <AVFoundation/AVFoundation.h>
+#import "LYVideo.h"
+#import "MJExtension.h"
 
 static NSString *ID = @"reuse";
 @interface ViewController ()
@@ -40,6 +42,12 @@ static NSString *ID = @"reuse";
     //在get方法的时候，拼接请求参数
     NSString *httpUrl = @"http://120.25.226.186:32812/video";
 
+    //因为在解析数据中有标识符id，但是模型类中要用ID，不能相互对应，就要说明。
+    [LYVideo mj_setupReplacedKeyFromPropertyName:^NSDictionary *{
+    
+        return @{@"ID":@"id"};
+    
+    }];
     //0.设置请求路径
 //    NSURL *url = [NSURL URLWithString:url];
     NSURL *url = [NSURL URLWithString: httpUrl];
@@ -51,7 +59,9 @@ static NSString *ID = @"reuse";
         
         NSLog(@"%@",data);
         NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
-        self.videos = dic[@"videos"];
+        
+        self.videos = [LYVideo mj_objectArrayWithKeyValuesArray:dic[@"videos"]];
+//        self.videos = dic[@"videos"];
         [self.tableView reloadData];
     }];
     
@@ -78,12 +88,12 @@ static NSString *ID = @"reuse";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-    NSDictionary *video = self.videos[indexPath.row];
-    cell.textLabel.text = video[@"name"];
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"时长：%@", video[@"length"]];
+    LYVideo *video = self.videos[indexPath.row];
+    cell.textLabel.text = video.name;
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"时长：%@", video.length];
     
     //获得下载路径，为当前路径加上图片名称
-    NSString *path = [NSString stringWithFormat:@"http://120.25.226.186:32812/%@",video[@"image"]];
+    NSString *path = [NSString stringWithFormat:@"http://120.25.226.186:32812/%@",video.image];
     
     [cell.imageView sd_setImageWithURL:[NSURL URLWithString:path] placeholderImage:[UIImage imageNamed:@"placeholder"]];
     

@@ -15,6 +15,7 @@
 		6B51A7601CE96F7500FB63EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B51A75E1CE96F7500FB63EB /* LaunchScreen.storyboard */; };
 		6B51A76B1CE96F7500FB63EB /* json__Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B51A76A1CE96F7500FB63EB /* json__Tests.m */; };
 		6B51A7761CE96F7500FB63EB /* json__UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B51A7751CE96F7500FB63EB /* json__UITests.m */; };
+		6B51A7871CE9C8AE00FB63EB /* LYVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B51A7861CE9C8AE00FB63EB /* LYVideo.m */; };
 		BD30AB756EB1F510C03D2467 /* Pods_json__.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DBF26998571871D05E4741 /* Pods_json__.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,8 @@
 		6B51A7711CE96F7500FB63EB /* json姐血UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "json姐血UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B51A7751CE96F7500FB63EB /* json__UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = json__UITests.m; sourceTree = "<group>"; };
 		6B51A7771CE96F7500FB63EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B51A7851CE9C8AE00FB63EB /* LYVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYVideo.h; sourceTree = "<group>"; };
+		6B51A7861CE9C8AE00FB63EB /* LYVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYVideo.m; sourceTree = "<group>"; };
 		B7DBF26998571871D05E4741 /* Pods_json__.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_json__.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFB77B3E17195AD1D30AB50E /* Pods-json姐血.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-json姐血.release.xcconfig"; path = "Pods/Target Support Files/Pods-json姐血/Pods-json姐血.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,6 +124,8 @@
 				6B51A7541CE96F7500FB63EB /* AppDelegate.m */,
 				6B51A7561CE96F7500FB63EB /* ViewController.h */,
 				6B51A7571CE96F7500FB63EB /* ViewController.m */,
+				6B51A7851CE9C8AE00FB63EB /* LYVideo.h */,
+				6B51A7861CE9C8AE00FB63EB /* LYVideo.m */,
 				6B51A7591CE96F7500FB63EB /* Main.storyboard */,
 				6B51A75C1CE96F7500FB63EB /* Assets.xcassets */,
 				6B51A75E1CE96F7500FB63EB /* LaunchScreen.storyboard */,
@@ -345,6 +350,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B51A7871CE9C8AE00FB63EB /* LYVideo.m in Sources */,
 				6B51A7581CE96F7500FB63EB /* ViewController.m in Sources */,
 				6B51A7551CE96F7500FB63EB /* AppDelegate.m in Sources */,
 				6B51A7521CE96F7500FB63EB /* main.m in Sources */,
