@@ -15,6 +15,7 @@
 		6B51A7601CE96F7500FB63EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B51A75E1CE96F7500FB63EB /* LaunchScreen.storyboard */; };
 		6B51A76B1CE96F7500FB63EB /* json__Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B51A76A1CE96F7500FB63EB /* json__Tests.m */; };
 		6B51A7761CE96F7500FB63EB /* json__UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B51A7751CE96F7500FB63EB /* json__UITests.m */; };
+		BD30AB756EB1F510C03D2467 /* Pods_json__.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DBF26998571871D05E4741 /* Pods_json__.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3DD85748503C9D103B41D1EA /* Pods-json姐血.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-json姐血.debug.xcconfig"; path = "Pods/Target Support Files/Pods-json姐血/Pods-json姐血.debug.xcconfig"; sourceTree = "<group>"; };
 		6B51A74D1CE96F7500FB63EB /* json姐血.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "json姐血.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B51A7511CE96F7500FB63EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6B51A7531CE96F7500FB63EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +53,8 @@
 		6B51A7711CE96F7500FB63EB /* json姐血UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "json姐血UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B51A7751CE96F7500FB63EB /* json__UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = json__UITests.m; sourceTree = "<group>"; };
 		6B51A7771CE96F7500FB63EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7DBF26998571871D05E4741 /* Pods_json__.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_json__.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFB77B3E17195AD1D30AB50E /* Pods-json姐血.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-json姐血.release.xcconfig"; path = "Pods/Target Support Files/Pods-json姐血/Pods-json姐血.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD30AB756EB1F510C03D2467 /* Pods_json__.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3764A2109BE3D89F76C61822 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3DD85748503C9D103B41D1EA /* Pods-json姐血.debug.xcconfig */,
+				FFB77B3E17195AD1D30AB50E /* Pods-json姐血.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6B51A7441CE96F7500FB63EB = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +99,8 @@
 				6B51A7691CE96F7500FB63EB /* json姐血Tests */,
 				6B51A7741CE96F7500FB63EB /* json姐血UITests */,
 				6B51A74E1CE96F7500FB63EB /* Products */,
+				3764A2109BE3D89F76C61822 /* Pods */,
+				CA7FFCC72F5048409D10C352 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +156,14 @@
 			path = "json姐血UITests";
 			sourceTree = "<group>";
 		};
+		CA7FFCC72F5048409D10C352 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7DBF26998571871D05E4741 /* Pods_json__.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B51A77A1CE96F7500FB63EB /* Build configuration list for PBXNativeTarget "json姐血" */;
 			buildPhases = (
+				D1AAF165AC6929C7D3D06A3C /* 📦 Check Pods Manifest.lock */,
 				6B51A7491CE96F7500FB63EB /* Sources */,
 				6B51A74A1CE96F7500FB63EB /* Frameworks */,
 				6B51A74B1CE96F7500FB63EB /* Resources */,
+				6BAE8BB915A15909CE2A351A /* 📦 Embed Pods Frameworks */,
+				540DAC1633336B428F682BAA /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,6 +291,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		540DAC1633336B428F682BAA /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-json姐血/Pods-json姐血-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BAE8BB915A15909CE2A351A /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-json姐血/Pods-json姐血-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1AAF165AC6929C7D3D06A3C /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6B51A7491CE96F7500FB63EB /* Sources */ = {
@@ -411,6 +486,7 @@
 		};
 		6B51A77B1CE96F7500FB63EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DD85748503C9D103B41D1EA /* Pods-json姐血.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "json姐血/Info.plist";
@@ -422,6 +498,7 @@
 		};
 		6B51A77C1CE96F7500FB63EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFB77B3E17195AD1D30AB50E /* Pods-json姐血.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "json姐血/Info.plist";
@@ -496,6 +573,7 @@
 				6B51A77C1CE96F7500FB63EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6B51A77D1CE96F7500FB63EB /* Build configuration list for PBXNativeTarget "json姐血Tests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +582,7 @@
 				6B51A77F1CE96F7500FB63EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6B51A7801CE96F7500FB63EB /* Build configuration list for PBXNativeTarget "json姐血UITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +591,7 @@
 				6B51A7821CE96F7500FB63EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
